@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #2a04ed, #0071ff, #009aff, #00b8ca, #00d0a0);
+    color: #CDE7F0;
+    text-align: center;
+    margin: auto;
+
+}
+
+.header {
+    font-family: "Audiowide", sans-serif;
+    text-transform: uppercase;
+    padding: 4%;
+    letter-spacing: 20px;
+    font-size: 3vw;
+}
+
+.container2 {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    width: 23%;
+    height: 60vh;
+    border: 2px solid rgb(253, 250, 250);
+    padding: 0.5%;
+    border-radius: 5%;
+
+}
+
+.number-container {
+    width: 100%;
+    height: 10vh;
+    text-align: right;
+    font-size: 2.5vw;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 13px;
+    position: relative;
+    top: 1%;
+
+}
+
+.button {
+    width: 100%;
+    height: 8vh;
+    border: rgb(231, 224, 224) 2px solid;
+    border-radius: 2vh;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.button-container :last-child {
+    grid-column: 3/span 2;
+}
